@@ -1,0 +1,82 @@
+/* Reset & Body */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 15px 30px;
+    background: #1a1a1a;
+}
+.breadcrumb a {
+    color: gold;
+    text-decoration: none;
+    font-weight: 500;
+}
+.breadcrumb span {
+    margin: 0 5px;
+    color: #ccc;
+}
+.breadcrumb .current {
+    color: white;
+}
+
+/* Navbar */
+.main-header {
+    background: #1a1a1a;
+    padding: 15px 30px;
+}
+.navbar {display:flex; justify-content:space-between; align-items:center;}
+.logo {font-size:24px; font-weight:bold; color:gold;}
+.navbar ul {list-style:none; display:flex; gap:20px;}
+.navbar ul li a {
+    color:white; text-decoration:none; font-weight:500;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {color: gold;}
+
+/* Hero Section */
+.hero {display:flex; align-items:center; justify-content:space-between; padding:50px; background:linear-gradient(90deg,#1a1a1a,#333);}
+.hero-text {max-width:500px;}
+.hero-text h1 {font-size:36px; color:gold;}
+.hero-text p {margin:15px 0; line-height:1.6;}
+.btn-gold {background: gold; color:black; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold; margin-right:10px;}
+.btn-outline {border:2px solid gold; color: gold; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;}
+.btn-outline:hover {background: gold; color:black;}
+.hero-image img {max-width:300px; border-radius:50%; border:5px solid gold;}
+
+/* Services */
+.services {padding:50px 30px; text-align:center;}
+.services h2 {color:gold; margin-bottom:30px;}
+.service-container {display:flex; gap:20px; justify-content:center; flex-wrap:wrap;}
+.service-box {
+    background:#1f1f1f; padding:20px; border-radius:10px;
+    width:250px; text-decoration:none; color:white; transition:0.3s;
+    display:flex; flex-direction:column; align-items:center;
+}
+.service-box img {max-width:60px; margin-bottom:15px;}
+.service-box:hover {transform:translateY(-5px); background:#2a2a2a;}
+
+/* Scroll to Top Button */
+#topBtn {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99;
+    font-size:18px;
+    background: gold;
+    color: black;
+    border:none;
+    padding:10px 15px;
+    border-radius:50%;
+    cursor:pointer;
+}
+#topBtn:hover {background:#e6c200;}
+
+/* Footer */
+footer {background:#1a1a1a; padding:15px; text-align:center; color:#888; font-size:14px;}
